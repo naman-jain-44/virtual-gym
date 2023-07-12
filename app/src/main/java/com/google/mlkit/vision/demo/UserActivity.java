@@ -33,8 +33,8 @@ public class UserActivity extends AppCompatActivity {
 
             TextView h = (TextView)findViewById(R.id.scode_profile);
          laview =(LottieAnimationView)findViewById(R.id.lottieanimation);
-            h.setText(name);
-            if(name.equals("PushUps")){
+            h.setText((name.toUpperCase()));
+            if(name.equals("pushups")){
                 laview.setAnimation(R.raw.pushuplottie);
                 jj.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -44,7 +44,7 @@ public class UserActivity extends AppCompatActivity {
                     }
                 });
 
-            }else if(name.equals("Squats")){
+            }else if(name.equals("squats")){
                 laview.setAnimation(R.raw.squatslottie);
                 jj.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -54,7 +54,7 @@ public class UserActivity extends AppCompatActivity {
                     }
                 });
 
-            }else if(name.equals("BicepsCurl")){
+            }else if(name.equals("bicepscurl")){
                 laview.setAnimation(R.raw.bicepscurllottie);
                 jj.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -64,7 +64,7 @@ public class UserActivity extends AppCompatActivity {
                     }
                 });
 
-            }else if(name.equals("Plank")){
+            }else if(name.equals("plank")){
                 laview.setAnimation(R.raw.planklottie);
                 jj.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -74,7 +74,7 @@ public class UserActivity extends AppCompatActivity {
                     }
                 });
 
-            }else if(name.equals("Crunches")){
+            }else if(name.equals("crunches")){
                 laview.setAnimation(R.raw.cruncheslottie);
                 jj.setOnClickListener(new View.OnClickListener() {
                     @Override

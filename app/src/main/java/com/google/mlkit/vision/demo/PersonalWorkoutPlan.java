@@ -121,15 +121,7 @@ public class PersonalWorkoutPlan extends AppCompatActivity {
                 rowsRegion.removeView(workOutView);
             }
         });
-        //AutoTextComplete
-      //  final String[] workoutName = getResources().getStringArray(R.array.workout_array);
 
-//        for (int i = 0; i < rowsRegion.getChildCount(); i++) {
-//            LinearLayout linearLayout = (LinearLayout) rowsRegion.getChildAt(i);
-//            AutoCompleteTextView e1 = (AutoCompleteTextView) linearLayout.getChildAt(0);
-//            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,workoutName);
-//            e1.setAdapter(adapter);
-//        }
     }
 
     @Override
