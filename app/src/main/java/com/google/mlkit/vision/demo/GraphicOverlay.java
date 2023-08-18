@@ -11,25 +11,25 @@ import com.google.common.base.Preconditions;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A view which renders a series of custom graphics to be overlayed on top of an associated preview
- * (i.e., the camera preview). The creator can add graphics objects, update the objects, and remove
- * them, triggering the appropriate drawing and invalidation within the view.
- *
- * <p>Supports scaling and mirroring of the graphics relative the camera's preview properties. The
- * idea is that detection items are expressed in terms of an image size, but need to be scaled up
- * to the full view size, and also mirrored in the case of the front-facing camera.
- *
- * <p>Associated {@link Graphic} items should use the following methods to convert to view
- * coordinates for the graphics that are drawn:
- *
- * <ol>
- *   <li>{@link Graphic#scale(float)} adjusts the size of the supplied value from the image scale
- *       to the view scale.
- *   <li>{@link Graphic#translateX(float)} and {@link Graphic#translateY(float)} adjust the
- *       coordinate from the image's coordinate system to the view coordinate system.
- * </ol>
- */
+///**
+// * A view which renders a series of custom graphics to be overlayed on top of an associated preview
+// * (i.e., the camera preview). The creator can add graphics objects, update the objects, and remove
+// * them, triggering the appropriate drawing and invalidation within the view.
+// *
+// * <p>Supports scaling and mirroring of the graphics relative the camera's preview properties. The
+// * idea is that detection items are expressed in terms of an image size, but need to be scaled up
+// * to the full view size, and also mirrored in the case of the front-facing camera.
+// *
+// * <p>Associated {@link Graphic} items should use the following methods to convert to view
+// * coordinates for the graphics that are drawn:
+// *
+// * <ol>
+// *   <li>{@link Graphic#scale(float)} adjusts the size of the supplied value from the image scale
+// *       to the view scale.
+// *   <li>{@link Graphic#translateX(float)} and {@link Graphic#translateY(float)} adjust the
+// *       coordinate from the image's coordinate system to the view coordinate system.
+// * </ol>
+// */
 public class GraphicOverlay extends View {
   private final Object lock = new Object();
   private final List<Graphic> graphics = new ArrayList<>();
